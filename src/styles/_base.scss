@@ -1,0 +1,38 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: $gormorant;
+	color: $text-color;
+}
+
+h1 {	
+	color: $white;
+	font-size: 7rem;
+	line-height: 8rem;
+	text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.39), 0 0 58px rgba(78, 106, 74, 0.7);
+	font-family: $gormorant;
+	font-weight: 600;
+}
+
+h2 {
+	font-family: $montserat;
+	font-weight: 600;
+}
+
+h2 {
+	color: $text-color;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.075rem;
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 3rem;
+}
+
+.no-padding {
+	padding: 0;
+}

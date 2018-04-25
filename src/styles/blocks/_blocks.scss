@@ -1,0 +1,239 @@
+.main-body-wrapper {
+	position: relative;
+	padding-top: 13.6rem;
+}
+
+header {
+	background-color: $white;
+	font-family: $montserat;
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.06rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	height: 13.6rem;
+	transition: all linear 0.5s;
+
+	&.with-scroll {
+		height: 8.6rem;
+
+		.navbar-brand {
+			img {
+				width: 97px;
+				transition: all linear 0.5s;
+			}
+			
+		} 
+	}
+
+	.container {
+		@media screen and (min-width: 1200px) {
+			width: 930px;
+		}
+	}
+
+	.navbar {
+		padding: 0;
+	}
+
+	.navbar-brand {
+		padding: 0 2rem;
+		margin: 0;
+
+		img {
+			width: 154px;
+			transition: all linear 0.5s;
+		}
+	} 
+
+	.nav.navbar-nav {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		li {
+			display: inline-block;
+
+			a {
+				color: $text-color;
+			}
+
+			&.active {
+				a {
+					color: $pr-green;
+				}
+			}
+
+			&:hover, &:active {
+				a {
+					color:  $pr-green;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.banner {
+	background-image: url('/dist/images/Imagery/header-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 11rem 10rem 24rem;
+	position: relative;
+	margin-bottom: -11rem;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 18rem;
+		width: 100%;
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.23) 100%);
+	}
+}
+
+.content-tree-section {
+	padding-bottom: 23rem;
+}
+
+.large-container {
+	position: relative;
+	background-color: $white;
+	box-shadow: 0 0 179px 9px rgba(224, 222, 221, 0.14);
+	padding: 10rem 13rem 16rem;
+
+	&:before {
+		position: absolute;
+		content: '';
+		right: 50%;
+		bottom: 16rem;
+		width: 0.1rem;
+		height: calc(100% - 26rem);
+		background: $pr-green;
+		-webkit-transform: translate(-50%, 0%);
+		transform: translate(-50%, 0%);
+	}
+
+	.tree-wrap {
+		position: relative;
+	}
+
+	.tree-branch {
+		display: flex;
+
+
+		&:not(:last-child) {
+			.tree-branch-img {
+				padding-bottom: 39rem;
+			}
+		}
+
+		.tree-branch-img, .tree-branch-text {
+			width: calc(50% - 1px);
+			display: inline-block;
+		}
+
+		.tree-branch-img {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.tree-branch-text {
+
+			.tree-icon {
+				position: relative;
+				width: 8.4rem;
+				height: 8.4rem;
+				display: inline-block;
+
+				&:before {
+					position: absolute;
+					content: '';
+					top: 4.1rem;
+					width: 7rem;
+					height: 0.1rem;
+					background: $pr-green;
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	.tree-branch.right-text {
+		.tree-branch-text {
+			padding-left: 7rem;
+		}
+
+		.tree-icon {
+
+			&:before {
+				left: -7rem;
+			}
+		}
+	}
+
+	.tree-branch.left-text {
+		text-align: right;
+
+		.tree-branch-text {
+			padding-right: 7rem;
+		}
+
+		.tree-icon {
+			position: relative;
+			width: 8.4rem;
+			height: 8.4rem;
+
+			&:before {
+				right: -7rem;
+			}
+		}
+	}
+}
+
+footer {
+	background-color: #4c922a;
+	background-image: url('/dist/images/Imagery/footer-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 15rem 10rem 2rem;
+
+	p {
+		font-family: $gormorant;
+		color: $white;
+	}
+	
+	.footer-text {
+
+		p {
+			font-size: 6rem;
+			line-height: 10rem;
+			margin-bottom: 12rem;
+		}
+		
+		strong {
+			font-weight: 600;
+		}
+
+		a {
+			font-style: italic;
+			color: $white;
+		}
+	}
+
+	.footer-copyrights {
+		border-top: 0.1rem solid $white;
+	}
+}
