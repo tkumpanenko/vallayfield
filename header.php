@@ -35,9 +35,10 @@
 			</nav>
 
 			<nav class="hidden-md-up mob-nav">
+				<a class="navbar-brand" href="#banner"><img src="src/images/logo.png" alt="logo"></a>
 				<button data-toggle="collapse" data-target="#mob-nav-collapse">
 					<!-- <i class="fas fa-bars"></i>  -->
-					<span><i class="fas fa-chevron-up"></i></span> </button>
+					<span><i class="fas fa-bars"></i></span> </button>
 				<div id="mob-nav-collapse" class="collapse">
 					<ul class="main-menu">
 						<li><a href="#consultations">Consultations</a></li>
