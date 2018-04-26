@@ -57,14 +57,14 @@
 								</div>
 							</div>
 						</div>
+                  <div class="row text-center">
+        <div class="col-12">
+          <div class="tree-footer ">
+            <img src="<?= asset('images/tree-footer.png') ?>" alt="">
+          </div>
+        </div>
+      </div>
 					</div>
-			<div class="row text-center">
-				<div class="col-12">
-					<div class="tree-footer ">
-						<img src="<?= asset('images/tree-footer.png') ?>" alt="">
-					</div>
-				</div>
-			</div>
 		</div>
 	</section>
 

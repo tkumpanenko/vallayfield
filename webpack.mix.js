@@ -36,10 +36,13 @@ mix.webpackConfig({
  |
  */
 
-mix.browserSync('ubiweb-valleyfield');
+mix.browserSync('valleyfield.local');
 
 mix.js('src/scripts/main.js', 'dist/scripts/')
    .sass('src/styles/main.scss', 'dist/styles/')
+    .options({
+        processCssUrls: false,
+    })
    .setPublicPath('dist');
 
 

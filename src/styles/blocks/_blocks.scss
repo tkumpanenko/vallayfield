@@ -8,7 +8,7 @@
 }
 
 .banner {
-	background-image: url('/dist/images/header-bg.jpg');
+	background-image: url('../images/header-bg.jpg');
 	background-size: cover;
 	background-position: center;
 	padding: 10.5rem 1rem 22rem;
@@ -30,26 +30,22 @@
 	}
 }
 
-.content-tree-section {
-	padding-bottom: 11rem;
-}
 
 .large-container {
 	position: relative;
 	background-color: $white;
-	box-shadow: 0 0 179px 9px rgba(224, 222, 221, 0.14);
-	padding: 3rem 1rem 0;
-
+	box-shadow: 0 0 129px 9px rgba(224, 222, 221, 0.15);
+	padding: 3rem 1rem;
 	@media screen and (min-width: 768px) {
-		padding: 10rem 0 0;
+		padding: 10rem 0 5rem;
 	}
 
 	@media screen and (min-width: 992px) {
-		padding: 10rem 7.9rem 0 8rem;
+		padding: 10rem 7.9rem;
 	}
 
 	@media screen and (min-width: 1200px) {
-		padding: 10rem 12.9rem 0 13rem;
+		padding: 10rem 12rem;
 	}
 }
 
