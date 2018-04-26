@@ -125,6 +125,18 @@
 				height: 8.4rem;
 				display: inline-block;
 
+				@media screen and (max-width: 767px) {
+					&:before {
+						position: absolute;
+						content: '';
+						top: -4.5rem;
+						width: 0.1rem;
+						height: 4.5rem;
+						background: $pr-green;
+						left: 4.1rem;
+					}
+				}				
+
 				@media screen and (min-width: 768px) {
 					&:before {
 						position: absolute;
@@ -168,7 +180,9 @@
 		.tree-icon {
 
 			&:before {
-				left: -7rem;
+				@media screen and (min-width: 768px) {
+					left: -7rem;
+				}
 			}
 		}
 	}
@@ -193,7 +207,9 @@
 			height: 8.4rem;
 
 			&:before {
-				right: -7rem;
+				@media screen and (min-width: 768px) {
+					right: -7rem;
+				}
 			}
 		}
 	}
