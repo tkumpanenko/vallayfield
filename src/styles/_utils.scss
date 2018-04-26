@@ -1,0 +1,29 @@
+.no-padding {
+	@media screen and (min-width: 768px) {
+		padding: 0;
+	}
+}
+
+.hidden-sm-down {
+	@media screen and (max-width: 767px) {
+		display: none!important;
+	}
+}
+
+.hidden-md-down {
+	@media screen and (max-width: 991px) {
+		display: none!important;
+	}
+}
+
+.hidden-sm-up {
+	@media screen and (min-width: 768px) {
+		display: none!important;
+	}
+}
+
+.hidden-md-up {
+	@media screen and (min-width: 992px) {
+		display: none!important;
+	}
+}

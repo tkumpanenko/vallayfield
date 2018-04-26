@@ -1,0 +1,47 @@
+.main-footer {
+	background-color: #4c922a;
+	background-image: url('/dist/images/footer-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 9rem 0 1rem;
+
+	@media screen and (min-width: 768px) {
+		padding: 13rem 0 1rem;
+	}
+
+	p {
+		font-family: $gormorant;
+		color: $white;
+	}
+	
+	.footer-text {
+
+		p {
+			font-size: 2.5rem;
+			line-height: 4rem;
+			margin-bottom: 10.4rem;
+
+			@media screen and (min-width: 768px) {
+				font-size: 6rem;
+				line-height: 10rem;
+			}
+		}
+		
+		strong {
+			font-weight: 600;
+		}
+
+		a {
+			color: $white;
+			white-space: no-wrap;
+		}
+	}
+
+	.footer-copyrights {
+		border-top: 0.1rem solid $white;
+
+		p {
+			line-height: 6rem;
+		}
+	}
+}

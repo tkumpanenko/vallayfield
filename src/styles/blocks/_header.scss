@@ -1,0 +1,164 @@
+.main-header {
+	background-color: $white;
+	font-family: $montserat;
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.06rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	height: 6rem;
+	transition: all linear 0.5s;
+
+	@media screen and (min-width: 992px) {
+		height: 13.6rem;
+
+		&.with-scroll {
+			height: 6rem;
+
+			@media screen and (min-width: 992px) {
+				height: 8.6rem;
+			}
+
+			.navbar-brand {
+				img {
+					width: 97px;
+					transition: all linear 0.5s;
+				}
+				
+			} 
+		}
+
+		.navbar-brand {
+			padding: 0 2rem;
+			margin: 0;
+
+			img {
+				width: 154px;
+				transition: all linear 0.5s;
+			}
+		} 
+	}	
+
+	.container {
+		@media screen and (min-width: 1200px) {
+			width: 930px;
+		}
+	}
+
+	.navbar {
+		padding: 0;
+	}
+
+	
+
+	.nav.navbar-nav {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		li {
+			display: inline-block;
+
+			a {
+				color: $text-color;
+
+				// &.active {
+				// 	color: $pr-green;
+				// }
+			}
+
+			&.active {
+				a {
+					color: $pr-green;
+				}
+			}
+
+			&:hover, &:active {
+				a {
+					color:  $pr-green;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.mob-nav {
+		position: relative;
+		min-height: 6rem;
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+
+		button {
+			background-color: transparent;
+			border: none;
+			color: $pr-green;
+			font-size: 4rem;
+			float: right;
+			padding: 0;
+			outline: none;
+			padding: 0 2rem;
+
+			span {
+				i {
+					transition: all 0.5s;
+				}
+			}
+
+			&.collapsed {
+				span i {
+					transform: rotateX(180deg);
+				}
+			}
+
+			&:not([class]) {
+				span i {
+					transform: rotateX(180deg);
+				}
+			}
+		}
+
+		#mob-nav-collapse {
+			width: 100%;
+
+		}
+
+		ul {
+			list-style-type: none;		
+			padding: 0;
+			width: 100%;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			margin-bottom: 0;
+
+			li {
+				text-align: center;
+				line-height: 5rem;
+				background-color: $white;
+
+				a {
+					color: $text-color;
+					width: 100%;
+					display: inline-block;
+
+					img {
+						width: 6rem;
+					}
+				}
+
+				&:active {
+					a {
+						color:  $pr-green;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+

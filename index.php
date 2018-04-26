@@ -1,73 +1,72 @@
 <?php include 'header.php'; ?>
 
 <div class="content-wrapper">
-  <section class="banner">
+	<section class="banner" id="banner">
 		<div class="container">
-			<div class="row">
+			<div class="header-content-block text-center">
+				<h1>Chez le 710 Valleyfield,<br> nous offrons aux patients un large éventail de services. </h1>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-tree-section">
+		<div class="container no-padding">
+					<div class="large-container">
+						<div class="tree-wrap">
+							<div class="tree-branch right-text" id="consultations">
+								<div class="tree-branch-img">
+									<img src="<?= asset('images/сonsultation.jpg') ?>" alt="">
+								</div>
+								<div class="tree-branch-text">
+									<div class="tree-icon">
+										<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><style>.st0{fill:#37b34a}</style><path class="st0" d="M100 0C44.9 0 0 44.9 0 100s44.9 100 100 100 100-44.9 100-100S155.1 0 100 0zm0 198.3c-54.2 0-98.3-44.1-98.3-98.3S45.8 1.7 100 1.7s98.3 44.1 98.3 98.3-44.1 98.3-98.3 98.3z"/><path class="st0" d="M139.7 74.9c-8.1 0-14.7 6.6-14.7 14.7 0 7.7 6 14.1 13.6 14.7v47.2c0 5.2-4.2 9.4-9.4 9.4s-9.4-4.2-9.4-9.4v-18.9c0-6.5-5.3-11.8-11.8-11.8s-11.8 5.3-11.8 11.8v18.9c0 5.2-4.2 9.4-9.4 9.4s-9.4-4.2-9.4-9.4v-36c6.5-.3 12.5-2.8 17.3-7.2 5.4-5.1 8.5-12.3 8.5-19.7V52.4c0-4.4-3.3-8-7.6-8.5v-2.7c0-.6-.5-1.2-1.2-1.2-.6 0-1.2.5-1.2 1.2v7.5c0 .6.5 1.2 1.2 1.2.6 0 1.2-.5 1.2-1.2v-2.5c3 .5 5.3 3.1 5.3 6.2v36.1c0 6.9-2.8 13.3-7.8 18s-11.6 7.1-18.5 6.6c-12.9-.8-23-12-23-25.5V52.4c0-3.1 2.3-5.7 5.3-6.2v2.5c0 .6.5 1.2 1.2 1.2s1.2-.5 1.2-1.2v-7.5c0-.6-.5-1.2-1.2-1.2s-1.2.5-1.2 1.2v2.7c-4.6.5-7.9 4.1-7.9 8.5v35.2c0 14.7 11.1 26.9 25.2 27.8h.6v36c0 6.5 5.3 11.8 11.8 11.8s11.8-5.3 11.8-11.8v-18.9c0-5.2 4.2-9.4 9.4-9.4s9.4 4.2 9.4 9.4v18.9c0 6.5 5.3 11.8 11.8 11.8s11.8-5.3 11.8-11.8v-47.2c7.6-.6 13.6-6.9 13.6-14.7 0-8-6.6-14.6-14.7-14.6zm0 27.1c-6.8 0-12.4-5.6-12.4-12.4s5.6-12.4 12.4-12.4c6.8 0 12.4 5.6 12.4 12.4-.1 6.8-5.6 12.4-12.4 12.4z"/><path class="st0" d="M139.7 86.3c-1.8 0-3.3 1.5-3.3 3.3s1.5 3.3 3.3 3.3 3.3-1.5 3.3-3.3-1.5-3.3-3.3-3.3z"/></svg>
+									</div>
+									<h2>Consultations sur place</h2>
+									<p>En venant nous voir, ça donne aux patients la possibilité d’avoir une consultation médical sur place. Nos médecins informeront tous les patients et adapteront les prescriptions à leurs besoins. La demande du patient sera ensuite traitée et approuvé. Vous recevrez votre prescription par la suite.</p>
+								</div>
+							</div>
+							<div class="tree-branch left-text" id="pourquoi">
+								<div class="tree-branch-text hidden-sm-down">
+									<div class="tree-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path d="M100 0C44.9 0 0 44.9 0 100s44.9 100 100 100 100-44.9 100-100S155.1 0 100 0zm0 44.3c5.9 21.5 7.5 37.4 0 81-7.5-43-5.8-59.6 0-81zm-5.3 83.9c-2.9-2.9-6.8-7.2-11.4-13.6-8.4-11.6-10.2-24.2-10.7-29.1C87.1 99.7 96 115.2 99 131.7c-1.5-1.3-2.9-2.4-4.3-3.5zm2.9 6.5c-6.6 5.1-15.1 9.9-28.2 9.9h-.3c1.3-1.5 4-4.1 9.4-6.6 6.1-2.8 15-3.3 19.1-3.3zm-.6-2.2c-4.9-.8-14.5-2.8-23-6.4-8.2-3.5-12.4-7.6-14.3-9.9 18.6 3.8 25 6.3 33.8 13.1 1.3 1.4 2.5 2.4 3.5 3.2zm8.8-4.3c-1.4 1.1-2.8 2.2-4.3 3.5 3-16.5 11.9-32 26.4-46.2-.4 4.9-2.3 17.4-10.7 29.1-4.6 6.4-8.5 10.7-11.4 13.6zm1.3 1.1c8.8-6.8 15.1-9.3 33.8-13.1-1.9 2.2-6.2 6.4-14.3 9.9-8.5 3.7-18 5.6-23 6.4.9-.8 2.1-1.8 3.5-3.2zm14.4 8.7c5.3 2.5 8.1 5.1 9.4 6.6h-.3c-13.1 0-21.6-4.7-28.2-9.9 4.1 0 13 .5 19.1 3.3zm-20.7 60.3v-62.7c6.9 5.4 15.8 10.6 29.7 10.6h2c.3 0 .6-.2.7-.4.1-.3.2-.6 0-.8-.1-.2-2.5-4.5-11-8.5-4.1-1.9-9.4-2.8-13.8-3.2 5.3-1.1 12.3-2.9 18.8-5.7 12.4-5.4 16.2-12 16.4-12.3s.1-.6-.1-.9c-.2-.3-.5-.4-.8-.3-15.7 3.1-23.1 5.2-30.4 9.5 1.9-2.2 4-4.9 6.3-8.1 11-15.2 11.1-31.5 11.1-32.1 0-.3-.2-.6-.5-.8-.3-.1-.7-.1-.9.2-12.7 12-21.4 25-25.9 38.8 6.7-40.4 5.4-56.4-1.5-80.7-.2-.7-1.4-.7-1.6 0-6.7 23.7-8.2 40.2-2 77.9-4.7-12.7-13.1-24.8-24.9-36-.2-.2-.6-.3-.9-.2-.3.1-.5.4-.5.8 0 .7.1 17 11.1 32.1 2.3 3.2 4.4 5.8 6.3 8.1-7.2-4.4-14.7-6.4-30.4-9.5-.3-.1-.7.1-.8.3-.2.3-.2.6-.1.9.2.3 3.9 6.9 16.4 12.3 6.4 2.8 13.4 4.6 18.6 5.6-4.4.4-9.9 1.2-14.1 3.2-8.6 4-10.9 8.3-11 8.5-.1.3-.1.6 0 .8.1.3.4.4.7.4h2c13.9 0 22.8-5.2 29.7-10.6v62.7c-53.8-.5-97.5-44.4-97.5-98.3C1.9 45.7 46 1.6 100.2 1.6s98.3 44.1 98.3 98.3c-.2 54-43.8 97.9-97.7 98.4z" fill="#37b34a"/></svg>
+									</div>
+									<h2>pourquoi cannabis?</h2>
+									<p>La raison pour laquelle le cannabis est un traitement médical si populaire se trouve dans les ingrédients actifs qu'il contient. Chaque variété a un ration différent de ces ingrédients actifs, ce qui rend chaque variété de cannabis plus adaptée à des besoins différents. L'ingrédient actif qui intéresse le plus les patients est le cannabioide connu sous le nom de cannabidiol ou CBD en abrégé.</p>
+								</div>
+								<div class="tree-branch-img">
+									<img src="<?= asset('images/pourquoi.jpg') ?>" alt="">
+								</div>
+								<div class="tree-branch-text hidden-sm-up">
+									<div class="tree-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path d="M100 0C44.9 0 0 44.9 0 100s44.9 100 100 100 100-44.9 100-100S155.1 0 100 0zm0 44.3c5.9 21.5 7.5 37.4 0 81-7.5-43-5.8-59.6 0-81zm-5.3 83.9c-2.9-2.9-6.8-7.2-11.4-13.6-8.4-11.6-10.2-24.2-10.7-29.1C87.1 99.7 96 115.2 99 131.7c-1.5-1.3-2.9-2.4-4.3-3.5zm2.9 6.5c-6.6 5.1-15.1 9.9-28.2 9.9h-.3c1.3-1.5 4-4.1 9.4-6.6 6.1-2.8 15-3.3 19.1-3.3zm-.6-2.2c-4.9-.8-14.5-2.8-23-6.4-8.2-3.5-12.4-7.6-14.3-9.9 18.6 3.8 25 6.3 33.8 13.1 1.3 1.4 2.5 2.4 3.5 3.2zm8.8-4.3c-1.4 1.1-2.8 2.2-4.3 3.5 3-16.5 11.9-32 26.4-46.2-.4 4.9-2.3 17.4-10.7 29.1-4.6 6.4-8.5 10.7-11.4 13.6zm1.3 1.1c8.8-6.8 15.1-9.3 33.8-13.1-1.9 2.2-6.2 6.4-14.3 9.9-8.5 3.7-18 5.6-23 6.4.9-.8 2.1-1.8 3.5-3.2zm14.4 8.7c5.3 2.5 8.1 5.1 9.4 6.6h-.3c-13.1 0-21.6-4.7-28.2-9.9 4.1 0 13 .5 19.1 3.3zm-20.7 60.3v-62.7c6.9 5.4 15.8 10.6 29.7 10.6h2c.3 0 .6-.2.7-.4.1-.3.2-.6 0-.8-.1-.2-2.5-4.5-11-8.5-4.1-1.9-9.4-2.8-13.8-3.2 5.3-1.1 12.3-2.9 18.8-5.7 12.4-5.4 16.2-12 16.4-12.3s.1-.6-.1-.9c-.2-.3-.5-.4-.8-.3-15.7 3.1-23.1 5.2-30.4 9.5 1.9-2.2 4-4.9 6.3-8.1 11-15.2 11.1-31.5 11.1-32.1 0-.3-.2-.6-.5-.8-.3-.1-.7-.1-.9.2-12.7 12-21.4 25-25.9 38.8 6.7-40.4 5.4-56.4-1.5-80.7-.2-.7-1.4-.7-1.6 0-6.7 23.7-8.2 40.2-2 77.9-4.7-12.7-13.1-24.8-24.9-36-.2-.2-.6-.3-.9-.2-.3.1-.5.4-.5.8 0 .7.1 17 11.1 32.1 2.3 3.2 4.4 5.8 6.3 8.1-7.2-4.4-14.7-6.4-30.4-9.5-.3-.1-.7.1-.8.3-.2.3-.2.6-.1.9.2.3 3.9 6.9 16.4 12.3 6.4 2.8 13.4 4.6 18.6 5.6-4.4.4-9.9 1.2-14.1 3.2-8.6 4-10.9 8.3-11 8.5-.1.3-.1.6 0 .8.1.3.4.4.7.4h2c13.9 0 22.8-5.2 29.7-10.6v62.7c-53.8-.5-97.5-44.4-97.5-98.3C1.9 45.7 46 1.6 100.2 1.6s98.3 44.1 98.3 98.3c-.2 54-43.8 97.9-97.7 98.4z" fill="#37b34a"/></svg>
+									</div>
+									<h2>pourquoi cannabis?</h2>
+									<p>La raison pour laquelle le cannabis est un traitement médical si populaire se trouve dans les ingrédients actifs qu'il contient. Chaque variété a un ration différent de ces ingrédients actifs, ce qui rend chaque variété de cannabis plus adaptée à des besoins différents. L'ingrédient actif qui intéresse le plus les patients est le cannabioide connu sous le nom de cannabidiol ou CBD en abrégé.</p>
+								</div>
+							</div>
+							<div class="tree-branch right-text" id="medical">
+								<div class="tree-branch-img">
+									<img src="<?= asset('images/chez-toi.jpg') ?>" alt="">
+								</div>
+								<div class="tree-branch-text">
+									<div class="tree-icon">
+										<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><style>.st0{fill:#37b34a}</style><path class="st0" d="M100 0C44.9 0 0 44.9 0 100s44.9 100 100 100 100-44.9 100-100S155.1 0 100 0zm0 1.7c54.2 0 98.3 44.1 98.3 98.3 0 23.7-8.4 45.5-22.4 62.5H141V120l1.5 2c1.3 1.8 3.9 2.2 5.7.9s2.2-3.9.9-5.7l-45.7-62.3c-.8-1.1-2-1.7-3.3-1.7s-2.5.6-3.3 1.7L75.6 83.7v-9.5h1.7v-1.7H57.8v1.7h1.3V106L51 117.1c-1.3 1.8-.9 4.4.9 5.7.7.5 1.6.8 2.4.8 1.3 0 2.5-.6 3.3-1.7l1.5-2v42.5h-35c-14-17-22.4-38.8-22.4-62.5C1.7 45.8 45.8 1.7 100 1.7zM75.5 130.9l10.7-14.6L97 131.1v25.4H75.4l.1-25.6zm-.8 27.2H101v4.4H71.7v-4.4h3zm27.1-1.7h-3v-23.1l2.8 3.9 1.4-1-16.1-21.9c-.3-.4-1-.4-1.4 0l-16.1 21.9 1.4 1 3-4v23.3h-3c-.5 0-.8.4-.8.8v5.2h-9.2v-44.8L100 64.2l39.3 53.4v44.8h-36.6v-5.2c-.1-.4-.5-.8-.9-.8zM73.8 86l-13.1 17.8V74.1h13.1V86zM98 55.8c.5-.6 1.2-1 2-1s1.5.4 2 1l45.7 62.3c.8 1.1.6 2.6-.5 3.4-1.1.8-2.6.6-3.4-.5l-43.1-58.7c-.3-.4-1-.4-1.4 0L56.2 121c-.8 1-2.4 1.3-3.4.5-1.1-.8-1.3-2.3-.5-3.4L98 55.8zm2 142.5c-29.7 0-56.4-13.3-74.4-34.2H174.4c-18 20.9-44.7 34.2-74.4 34.2z"/><path class="st0" d="M112.5 149.7h15.2c.5 0 .8-.4.8-.8v-28.7c0-.5-.4-.8-.8-.8h-15.2c-.5 0-.8.4-.8.8v28.7c-.1.4.3.8.8.8zm.8-9.5h5.9v7.8h-5.9v-7.8zm5.9-1.7h-5.9v-7.9h5.9v7.9zm1.7-7.9h5.9v7.9h-5.9v-7.9zm0 17.4v-7.8h5.9v7.8h-5.9zm6-19.1H121V121h5.9v7.9zm-7.7-7.9v7.8h-5.9V121h5.9zM108.5 102.9V87c0-.5-.4-.8-.8-.8H92.5c-.5 0-.8.4-.8.8v15.9c0 .5.4.8.8.8h15.2c.4.1.8-.3.8-.8zm-1.7-8.7h-5.9v-6.3h5.9v6.3zm-7.6-6.3v6.3h-5.9v-6.3h5.9zm-6 7.9h5.9v6.3h-5.9v-6.3zm7.6 6.3v-6.3h5.9v6.3h-5.9zM80.3 140.1c-1.6 0-2.8 1.3-2.8 2.8 0 1.6 1.3 2.8 2.8 2.8 1.6 0 2.8-1.3 2.8-2.8.1-1.5-1.2-2.8-2.8-2.8zm0 4c-.6 0-1.2-.5-1.2-1.2 0-.6.5-1.2 1.2-1.2.6 0 1.2.5 1.2 1.2s-.5 1.2-1.2 1.2zM61.3 60.6c2 1.6 4.1 3.2 4.5 6 0 .2.1.4.3.6.1.1.3.2.5.2h.1c.3 0 7.8-1 9.8-5.3.9-1.9.5-4.1-1.1-6.5-3.9-5.8-2.5-7.3.6-10.7.7-.7 1.5-1.6 2.3-2.6 3.4-4.1 3.6-9.2.7-13.4-3-4.4-8.4-6.5-12.7-5.1-3.2 1-5.4 3.5-6.2 6.9-1.1 4.3.2 9.2 3.1 12.3.7.8 1.1 1.4 1 1.9-.1.8-1 1.5-2.2 2.4-1.7 1.3-3.9 3-4.6 5.9-.9 3.6 1.5 5.5 3.9 7.4zm-2.3-7c.6-2.3 2.4-3.8 4-5 1.4-1.1 2.7-2.1 2.8-3.6.1-1-.4-2-1.5-3.1-2.5-2.7-3.6-7.1-2.7-10.7.7-2.8 2.5-4.8 5.1-5.7.7-.2 1.5-.3 2.3-.3 3.1 0 6.5 1.8 8.6 4.8 1.2 1.7 3.6 6.4-.6 11.4-.8.9-1.5 1.7-2.2 2.5-3.2 3.4-5.4 5.8-.8 12.7 1.3 1.9 1.6 3.5 1 4.9-1.1 2.5-5.4 3.7-7.6 4.2-.7-3-3-4.7-5-6.3-2.5-2.1-4-3.4-3.4-5.8z"/></svg>
+									</div>
+									<h2>cannabis Medical chez toi</h2>
+									<p>Si vous souhaitez cultiver votre propre cannabis médical ou faire appel à un cultivateur désigné pour le faire à votre place, cela est réalisable. Nous prenons soin de bâtir votre dossier et coordonnons les arrangements avec Santé Canada</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			<div class="row text-center">
 				<div class="col-12">
-					<div class="header-content-block text-center">
-						<h1>Chez le 710 Valleyfield,<br> nous offrons aux patients un large éventail de services. </h1>
+					<div class="tree-footer ">
+						<img src="<?= asset('images/tree-footer.png') ?>" alt="">
 					</div>
 				</div>
 			</div>
 		</div>
-  </section>
-
-  <section class="content-tree-section">
-  	<div class="container">
-  		<div class="row">
-  			<div class="col-12 no-padding">
-  				<div class="large-container">
-  					<div class="tree-wrap">
-  						<div class="tree-branch right-text" id="consultations">
-  							<div class="tree-branch-img">
-  								<img src="<?= asset('images/Imagery/сonsultation.jpg') ?>" alt="">
-  							</div>
-  							<div class="tree-branch-text">
-  								<div class="tree-icon">
-  									<img src="<?= asset('images/Icons/Consultation.svg') ?>" alt="">
-  								</div>
-  								<h2>Consultations sur place</h2>
-  								<p>En venant nous voir, ça donne aux patients la possibilité d’avoir une consultation médical sur place. Nos médecins informeront tous les patients et adapteront les prescriptions à leurs besoins. La demande du patient sera ensuite traitée et approuvé. Vous recevrez votre prescription par la suite.</p>
-  							</div>
-  						</div>
-  						<div class="tree-branch left-text" id="pourquoi">
-  							<div class="tree-branch-text">
-  								<div class="tree-icon">
-  									<img src="<?= asset('images/Icons/Pourquoi.svg') ?>" alt="">
-  								</div>
-  								<h2>pourquoi cannabis?</h2>
-  								<p>La raison pour laquelle le cannabis est un traitement médical si populaire se trouve dans les ingrédients actifs qu'il contient. Chaque variété a un ration différent de ces ingrédients actifs, ce qui rend chaque variété de cannabis plus adaptée à des besoins différents. L'ingrédient actif qui intéresse le plus les patients est le cannabioide connu sous le nom de cannabidiol ou CBD en abrégé.</p>
-  							</div>
-  							<div class="tree-branch-img">
-  								<img src="<?= asset('images/Imagery/pourquoi.jpg') ?>" alt="">
-  							</div>
-  						</div>
-  						<div class="tree-branch right-text" id="medical">
-  							<div class="tree-branch-img">
-  								<img src="<?= asset('images/Imagery/chez-toi.jpg') ?>" alt="">
-  							</div>
-  							<div class="tree-branch-text">
-  								<div class="tree-icon">
-  									<img src="<?= asset('images/Icons/Chez-Toi.svg') ?>" alt="">
-  								</div>
-  								<h2>cannabis Medical chez toi</h2>
-  								<p>Si vous souhaitez cultiver votre propre cannabis médical ou faire appel à un cultivateur désigné pour le faire à votre place, cela est réalisable. Nous prenons soin de bâtir votre dossier et coordonnons les arrangements avec Santé Canada</p>
-  							</div>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
-  		</div>
-  		<div class="row text-center">
-  			<div class="col-12">
-  				<div class="tree-footer ">
-  					<img src="<?= asset('images/Logos/tree-footer.png') ?>" alt="">
-  				</div>
-  			</div>
-  		</div>
-  	</div>
-  </section>
+	</section>
 
 </div>
 

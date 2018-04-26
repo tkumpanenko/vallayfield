@@ -9,11 +9,21 @@ body {
 
 h1 {	
 	color: $white;
-	font-size: 7rem;
-	line-height: 8rem;
+	font-size: 3rem;
+	line-height: 6rem;
 	text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.39), 0 0 58px rgba(78, 106, 74, 0.7);
 	font-family: $gormorant;
 	font-weight: 600;
+
+	@media screen and (min-width: 768px) {
+		font-size: 5rem;
+		line-height: 7rem;
+	}
+
+	@media screen and (min-width: 992px) {
+		font-size: 7rem;
+		line-height: 8rem;
+	}
 }
 
 h2 {
@@ -33,6 +43,3 @@ p {
 	line-height: 3rem;
 }
 
-.no-padding {
-	padding: 0;
-}

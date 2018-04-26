@@ -1,91 +1,23 @@
 .main-body-wrapper {
 	position: relative;
-	padding-top: 13.6rem;
-}
+	padding-top: 6rem;
 
-header {
-	background-color: $white;
-	font-family: $montserat;
-	font-size: 1.2rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 0.06rem;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1000;
-	height: 13.6rem;
-	transition: all linear 0.5s;
-
-	&.with-scroll {
-		height: 8.6rem;
-
-		.navbar-brand {
-			img {
-				width: 97px;
-				transition: all linear 0.5s;
-			}
-			
-		} 
-	}
-
-	.container {
-		@media screen and (min-width: 1200px) {
-			width: 930px;
-		}
-	}
-
-	.navbar {
-		padding: 0;
-	}
-
-	.navbar-brand {
-		padding: 0 2rem;
-		margin: 0;
-
-		img {
-			width: 154px;
-			transition: all linear 0.5s;
-		}
-	} 
-
-	.nav.navbar-nav {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-
-		li {
-			display: inline-block;
-
-			a {
-				color: $text-color;
-			}
-
-			&.active {
-				a {
-					color: $pr-green;
-				}
-			}
-
-			&:hover, &:active {
-				a {
-					color:  $pr-green;
-					text-decoration: none;
-				}
-			}
-		}
+	@media screen and (min-width: 992px) {
+		padding-top: 13.6rem;
 	}
 }
 
 .banner {
-	background-image: url('/dist/images/Imagery/header-bg.jpg');
+	background-image: url('/dist/images/header-bg.jpg');
 	background-size: cover;
 	background-position: center;
-	padding: 11rem 10rem 24rem;
+	padding: 10.5rem 1rem 22rem;
 	position: relative;
 	margin-bottom: -11rem;
+
+	@media screen and (min-width: 768px) {
+		padding: 10.5rem 10rem 22rem;
+	}
 
 	&:before {
 		content: '';
@@ -99,14 +31,26 @@ header {
 }
 
 .content-tree-section {
-	padding-bottom: 23rem;
+	padding-bottom: 11rem;
 }
 
 .large-container {
 	position: relative;
 	background-color: $white;
 	box-shadow: 0 0 179px 9px rgba(224, 222, 221, 0.14);
-	padding: 10rem 13rem 16rem;
+	padding: 3rem 1rem 0;
+
+	@media screen and (min-width: 768px) {
+		padding: 10rem 5rem 0;
+	}
+
+	@media screen and (min-width: 992px) {
+		padding: 10rem 8rem 0;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 10rem 13rem 0;
+	}
 
 	&:before {
 		position: absolute;
@@ -116,37 +60,69 @@ header {
 		width: 0.1rem;
 		height: calc(100% - 26rem);
 		background: $pr-green;
-		-webkit-transform: translate(-50%, 0%);
 		transform: translate(-50%, 0%);
-	}
 
-	.tree-wrap {
-		position: relative;
+		@media screen and (min-width: 768px) and (max-width: 991px) {
+			bottom: 21rem;
+		}
+
+
 	}
+}
+
+.tree-wrap {
+	position: relative;
 
 	.tree-branch {
-		display: flex;
 
+		padding-bottom: 2rem;
+
+		@media screen and (min-width: 768px) {
+			display: flex;
+			padding-bottom: 0;
+		}
 
 		&:not(:last-child) {
 			.tree-branch-img {
-				padding-bottom: 39rem;
+				padding-bottom: 4.5rem;		
+
+				@media screen and (min-width: 768px) {
+					padding-bottom: 38.5rem;
+					
+				}
 			}
 		}
 
 		.tree-branch-img, .tree-branch-text {
-			width: calc(50% - 1px);
-			display: inline-block;
-		}
+			width: 100%;
+			
 
-		.tree-branch-img {
-			img {
-				width: 100%;
-				height: auto;
+			@media screen and (min-width: 768px) {
+				width: 50%;
+				display: inline-block;
 			}
 		}
 
+		.tree-branch-img {
+
+			@media screen and (max-width: 767px) {
+				padding-bottom: 4rem;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+			}			
+		}
+
+
 		.tree-branch-text {
+
+			@media screen and (max-width: 767px) {
+				text-align: center;
+				padding: 0 1.5rem 0;
+				background-color: $white;
+			}
 
 			.tree-icon {
 				position: relative;
@@ -154,26 +130,38 @@ header {
 				height: 8.4rem;
 				display: inline-block;
 
-				&:before {
-					position: absolute;
-					content: '';
-					top: 4.1rem;
-					width: 7rem;
-					height: 0.1rem;
-					background: $pr-green;
-				}
+				@media screen and (min-width: 768px) {
+					&:before {
+						position: absolute;
+						content: '';
+						top: 4.1rem;
+						width: 7rem;
+						height: 0.1rem;
+						background: $pr-green;
+					}
+				}				
 
 				img {
 					width: 100%;
 					height: 100%;
 				}
 			}
+
+			h2 {
+				margin: 3rem 0 1.5rem;
+			}
 		}
 	}
 
 	.tree-branch.right-text {
 		.tree-branch-text {
-			padding-left: 7rem;
+			@media screen and (min-width: 768px) {
+				padding: 0 0 4rem 7rem;
+			}
+
+			@media screen and (min-width: 1200px) {
+				padding: 0 5rem 4rem 7rem;
+			}
 		}
 
 		.tree-icon {
@@ -188,7 +176,13 @@ header {
 		text-align: right;
 
 		.tree-branch-text {
-			padding-right: 7rem;
+			@media screen and (min-width: 768px) {
+				padding: 0 7rem 4rem 0;
+			}
+
+			@media screen and (min-width: 1200px) {
+				padding: 0 7rem 4rem 5rem;
+			}
 		}
 
 		.tree-icon {
@@ -201,39 +195,31 @@ header {
 			}
 		}
 	}
+
+	.tree-branch:last-child {
+		.tree-branch-text {
+			@media screen and (min-width: 768px) {
+				padding-bottom: 0!important;
+			}
+		}
+	}
 }
 
-footer {
-	background-color: #4c922a;
-	background-image: url('/dist/images/Imagery/footer-bg.jpg');
-	background-size: cover;
-	background-position: center;
-	padding: 15rem 10rem 2rem;
+.tree-footer {
+	background-color: $white;
+	padding-top: 5rem;
 
-	p {
-		font-family: $gormorant;
-		color: $white;
+	@media screen and (min-width: 768px) {
+		padding-top: 15rem;
 	}
+
+	img {
+		width: 80%;
+		max-width: 39rem;
+	}
+}
+
 	
-	.footer-text {
 
-		p {
-			font-size: 6rem;
-			line-height: 10rem;
-			margin-bottom: 12rem;
-		}
-		
-		strong {
-			font-weight: 600;
-		}
+	
 
-		a {
-			font-style: italic;
-			color: $white;
-		}
-	}
-
-	.footer-copyrights {
-		border-top: 0.1rem solid $white;
-	}
-}
